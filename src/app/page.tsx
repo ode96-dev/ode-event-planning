@@ -2,6 +2,7 @@ import ScrollPinHero from "@/components/animations/scroll-pin-hero/scroll-pin-he
 import Header from "@/components/header/header";
 import StickyCategoryScroll from "@/components/portfolio/sticky-category-scroll/sticky-category-scroll";
 import ServicesSection from "@/components/services-section/services-section";
+import TestimonialsSection from "@/components/testimonials/testimonials-section";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <ScrollPinHero />
       <StickyCategoryScroll />
       <ServicesSection />
+      <TestimonialsSection />
     </main>
   );
 }

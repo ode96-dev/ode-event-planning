@@ -88,7 +88,7 @@ const StickyCategoryScroll = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
           <div className="lg:col-span-7 lg:sticky lg:top-28 z-10">
-            <div className="relative aspect-16/11 w-full rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-200/80 shadow-2xl">
+            <div className="relative aspect-16/11 w-full rounded-sm overflow-hidden bg-neutral-100 border border-neutral-200/80 shadow-sm">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentChapter.event.id}
