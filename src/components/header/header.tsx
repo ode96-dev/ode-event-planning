@@ -50,22 +50,12 @@ const Header = () => {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm capitalize tracking-[0.15em] font-medium text-neutral-600">
-          <Link
-            href="/portfolio"
-            className={`transition-colors hover:text-neutral-950 ${
-              pathname.startsWith("/portfolio")
-                ? "text-[#b4861c] font-semibold"
-                : ""
-            }`}
-          >
-            Portfolio
-          </Link>
           <button
             type="button"
             onClick={() => handleNavClick("portfolio-section")}
             className="hover:text-neutral-950 transition-colors cursor-pointer"
           >
-            Categories
+            Portfolio
           </button>
           <button
             type="button"
@@ -115,19 +105,12 @@ const Header = () => {
 
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-neutral-200 px-6 py-6 space-y-4 text-sm capitalize tracking-widest text-neutral-700 shadow-xl">
-          <Link
-            href="/portfolio"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block w-full text-left py-2 hover:text-neutral-950 font-medium"
-          >
-            Portfolio
-          </Link>
           <button
             type="button"
             onClick={() => handleNavClick("portfolio-section")}
             className="block w-full text-left py-2 hover:text-neutral-950 font-medium cursor-pointer"
           >
-            Category
+            Portfolio
           </button>
           <button
             type="button"
