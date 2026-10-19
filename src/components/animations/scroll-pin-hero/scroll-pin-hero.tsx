@@ -85,10 +85,10 @@ const ScrollPinHero = ({
             fill
             priority
             referrerPolicy="no-referrer"
-            className="object-cover object-center opacity-25 select-none"
+            className="object-cover object-center opacity-60 select-none"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-white via-white/80 to-white/40 pointer-events-none" />
-          <div className="absolute inset-0 bg-radial from-transparent via-white/40 to-white pointer-events-none" />
+          <div className="absolute inset-0 bg-linear-to-t from-white/90 via-white/30 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-radial from-transparent via-transparent to-white/50 pointer-events-none" />
         </div>
       </div>
 
@@ -96,18 +96,18 @@ const ScrollPinHero = ({
 
       <div
         ref={contentRef}
-        className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 w-full my-auto flex flex-col items-center text-center" // items-start → items-center, added text-center
+        className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 w-full my-auto flex flex-col items-center text-center"
       >
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-[-0.03em] leading-[1.05] text-neutral-950 max-w-5xl mx-auto mb-8">
           {" "}
           <TextSplit
-            text="Crafting Ephemeral Worlds of Extraordinary Wonder"
+            text="Crafting Extraordinary Events"
             delay={150}
             stagger={25}
           />
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto font-normal leading-relaxed mb-10 text-balance">
+        <p className="text-base sm:text-lg md:text-xl text-neutral-700 max-w-3xl mx-auto font-normal leading-relaxed mb-10 text-balance">
           {" "}
           We architect turnkey high-profile galas, sovereign summits, luxury
           destination nuptials, across Kenya.{" "}
@@ -139,7 +139,7 @@ const ScrollPinHero = ({
               }
             }}
             strength={0.2}
-            className="px-6 py-4 bg-white hover:bg-neutral-50 text-neutral-900 border border-neutral-300 font-medium text-sm tracking-wide rounded-lg shadow-sm transition-colors cursor-pointer"
+            className="px-6 py-4 bg-white/70 backdrop-blur-sm hover:bg-white/90 text-neutral-900 border border-neutral-300 font-medium text-sm tracking-wide rounded-lg shadow-sm transition-colors cursor-pointer"
           >
             <span>Explore Works</span>
           </MagnetButton>
