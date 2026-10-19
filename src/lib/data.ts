@@ -339,7 +339,7 @@ export const SERVICES: ServiceItem[] = [
   {
     id: "lighting-sound",
     number: "02",
-    title: "Atmospheric Scenography & Kinetic Audio/Visual",
+    title: "Atmospheric Scenography",
     summary:
       "Emotionally calibrated lighting design, spatial soundscapes, and stagecraft.",
     description:

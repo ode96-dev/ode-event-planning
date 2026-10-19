@@ -35,10 +35,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-white/30 backdrop-blur-xl backdrop-saturate-150 border-b border-white/40 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md border-b border-neutral-200/80 py-3.5 shadow-sm"
-          : "bg-white/80 backdrop-blur-sm border-b border-neutral-100 py-5"
+          ? "py-3.5 shadow-[0_8px_32px_rgb(0_0_0/0.06)]"
+          : "py-5 shadow-none"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
@@ -49,7 +49,7 @@ const Header = () => {
           OdeEvents
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm capitalize tracking-[0.15em] font-medium text-neutral-600">
+        <nav className="hidden md:flex items-center gap-8 text-sm capitalize font-medium text-neutral-800">
           <button
             type="button"
             onClick={() => handleNavClick("portfolio-section")}
@@ -92,7 +92,7 @@ const Header = () => {
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Navigation Menu"
-            className="md:hidden p-2 text-neutral-700 hover:text-neutral-950 focus:outline-none cursor-pointer"
+            className="md:hidden p-2 text-neutral-800 hover:text-neutral-950 focus:outline-none cursor-pointer"
           >
             {mobileMenuOpen ? (
               <X className="w-6 h-6" />
@@ -104,7 +104,7 @@ const Header = () => {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-neutral-200 px-6 py-6 space-y-4 text-sm capitalize tracking-widest text-neutral-700 shadow-xl">
+        <div className="md:hidden bg-white/30 border-t border-white/40 px-6 py-6 mt-4 space-y-4 text-sm capitalize text-neutral-800 shadow-[0_16px_32px_rgb(0_0_0/0.06)]">
           <button
             type="button"
             onClick={() => handleNavClick("portfolio-section")}
