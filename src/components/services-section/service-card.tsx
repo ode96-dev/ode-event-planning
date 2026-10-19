@@ -8,7 +8,7 @@ import { ServiceCardProps } from "./types";
 const ServiceCard = ({ service, onInquireClick }: ServiceCardProps) => {
   return (
     <div
-      className={`group relative flex flex-col justify-between rounded-md border bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-sm`}
+      className={`group relative flex flex-col justify-between md:rounded-md md:border md:bg-white p-4 md:p-8 transition-all duration-300 hover:-translate-y-1 md:hover:shadow-sm`}
     >
       <div>
         <h3 className="text-xl font-bold tracking-tight text-neutral-900">
@@ -19,7 +19,7 @@ const ServiceCard = ({ service, onInquireClick }: ServiceCardProps) => {
           {service.description}
         </p>
 
-        <div className="my-6 h-px w-full bg-neutral-100" />
+        <div className="my-3 h-px w-full bg-neutral-100" />
 
         <div>
           <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-neutral-400">
@@ -50,7 +50,7 @@ const ServiceCard = ({ service, onInquireClick }: ServiceCardProps) => {
             }
           }}
           strength={0.2}
-          className={`group/btn flex w-full items-center justify-center gap-2 rounded-2xl py-3.5 px-4 text-sm font-semibold transition-all duration-200 bg-neutral-900 text-white hover:bg-[#997312] shadow-md hover:shadow-lg hover:shadow-[#997312]/20`}
+          className={`group/btn flex w-full items-center justify-center gap-2 rounded-full py-3.5 px-4 text-sm font-semibold transition-all duration-200 bg-neutral-900 text-white hover:bg-[#997312] shadow-md hover:shadow-lg hover:shadow-[#997312]/20`}
         >
           <span>Get Started</span>
         </MagnetButton>
