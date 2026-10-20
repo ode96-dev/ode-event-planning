@@ -3,6 +3,7 @@ import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import localFont from "next/font/local";
 import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 
 const googleSansLocal = localFont({
   variable: "--font-google-sans-local",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {" "}
           <Header />
           {children}
+          <Footer />
         </TooltipProvider>
       </body>
     </html>
