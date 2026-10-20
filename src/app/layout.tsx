@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import localFont from "next/font/local";
+import Header from "@/components/header/header";
 
 const googleSansLocal = localFont({
   variable: "--font-google-sans-local",
@@ -26,7 +27,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${googleSansLocal.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <TooltipProvider>{children}</TooltipProvider>
+        <TooltipProvider>
+          {" "}
+          <Header />
+          {children}
+        </TooltipProvider>
       </body>
     </html>
   );
