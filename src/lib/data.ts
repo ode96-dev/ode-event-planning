@@ -409,7 +409,7 @@ export const CLIENT_TESTIMONIALS = [
   {
     id: "test-1",
     quote:
-      "AURA transformed our sovereign summit into an architectural masterwork. The kinetic lighting and protocol handling for 680 heads of state were executed with military precision.",
+      "OdeEvents transformed our sovereign summit into an architectural masterwork. The kinetic lighting and protocol handling for 680 heads of state were executed with military precision.",
     author: "Eleanor Vance-Sterling",
     role: "Chief Communications Officer",
     company: "Vanguard Global Forum",
@@ -433,7 +433,7 @@ export const CLIENT_TESTIMONIALS = [
   {
     id: "test-3",
     quote:
-      "For our couture launch in Venice, AURA navigated complex historic venue preservation laws while delivering a 60-meter infinity runway that dominated global fashion media.",
+      "For our couture launch in Venice, OdeEvents navigated complex historic venue preservation laws while delivering a 60-meter infinity runway that dominated global fashion media.",
     author: "Christian Delaunay",
     role: "Global Creative Vice President",
     company: "Maison Éternelle Paris",
@@ -445,7 +445,7 @@ export const CLIENT_TESTIMONIALS = [
   {
     id: "test-4",
     quote:
-      "The level of discretion and security provided for our private Tribeca penthouse gathering was absolute. AURA designed a multi-zone acoustic environment where conversation felt effortless.",
+      "The level of discretion and security provided for our private Tribeca penthouse gathering was absolute. OdeEvents designed a multi-zone acoustic environment where conversation felt effortless.",
     author: "Julian Sterling-Cross",
     role: "President & Patron",
     company: "Haute Horlogerie Society",

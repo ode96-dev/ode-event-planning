@@ -76,7 +76,7 @@ const Header = () => {
             onClick={() => handleNavClick("testimonials-section")}
             className="hover:text-neutral-950 transition-colors cursor-pointer"
           >
-            Press & Patrons
+            Testimonials
           </button>
         </nav>
 
@@ -85,7 +85,7 @@ const Header = () => {
             onClick={() => handleNavClick("inquiry-section")}
             className="hidden sm:inline-flex px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-neutral-950 hover:bg-neutral-800 rounded-md transition-colors whitespace-nowrap cursor-pointer shadow-sm"
           >
-            Initiate Intake
+            Get Started
           </MagnetButton>
 
           <button
@@ -131,7 +131,7 @@ const Header = () => {
             onClick={() => handleNavClick("inquiry-section")}
             className="block w-full text-left py-2 text-[#b4861c] font-semibold cursor-pointer"
           >
-            Initiate Intake
+            Get Started
           </button>
         </div>
       )}
