@@ -55,8 +55,8 @@ const StickyCategoryScroll = () => {
 
         ScrollTrigger.create({
           trigger: el,
-          start: "top 50%",
-          end: "bottom 50%",
+          start: "top 55%",
+          end: "bottom 45%",
           onEnter: () => setActiveStep(idx),
           onEnterBack: () => setActiveStep(idx),
         });
@@ -75,15 +75,27 @@ const StickyCategoryScroll = () => {
       className="relative w-full bg-white text-neutral-900 py-24 sm:py-36 border-t border-neutral-100"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="mb-10">
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-500 mb-6 leading-[1.08]">
-            Architectural Precision Across Every Scale
-          </h2>
-          <p className="text-neutral-600 text-base sm:text-lg leading-relaxed font-normal">
-            From historic sovereign banquets to bespoke glass conservatories
-            over open water. Each project is engineered with strict
-            non-disclosure protocol and single-millimeter spatial execution.
-          </p>
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 md:gap-12 mb-12 lg:mb-16">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 mb-4 sm:mb-6 leading-[1.1]">
+              Architectural Precision Across Every Scale
+            </h2>
+            <p className="text-neutral-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl">
+              From historic sovereign banquets to bespoke glass conservatories
+              over open water. Each project is engineered with strict
+              non-disclosure protocol and single-millimeter spatial execution.
+            </p>
+          </div>
+
+          <div className="shrink-0">
+            <Link
+              href="/portfolio"
+              className="group inline-flex items-center gap-2 px-7 py-4 bg-neutral-950 hover:bg-neutral-800 text-white font-medium text-xs uppercase tracking-widest rounded-xl transition-all duration-200 shadow-sm hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#997312]"
+            >
+              <span>View Portfolio</span>
+              <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </Link>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
@@ -111,7 +123,7 @@ const StickyCategoryScroll = () => {
                 </motion.div>
               </AnimatePresence>
 
-              <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between gap-4 text-xs text-white">
+              <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between gap-4 text-xs text-white pointer-events-none">
                 <div className="space-y-1">
                   <div className="text-white font-medium text-sm sm:text-base">
                     {currentChapter.event.client}
@@ -137,8 +149,9 @@ const StickyCategoryScroll = () => {
                   ref={(el) => {
                     stepsRef.current[idx] = el;
                   }}
+                  aria-current={isCurrent ? "step" : undefined}
                   className={`transition-opacity duration-500 space-y-6 ${
-                    isCurrent ? "opacity-100" : "opacity-40 lg:opacity-35"
+                    isCurrent ? "opacity-100" : "opacity-40 lg:opacity-30"
                   }`}
                 >
                   <div className="text-xs uppercase tracking-[0.25em] text-[#997312] font-mono font-semibold">
@@ -149,15 +162,15 @@ const StickyCategoryScroll = () => {
                     {chapter.event.title}
                   </h3>
 
-                  <div className="text-xs text-neutral-500 font-mono tracking-wide">
+                  <div className="text-xs text-neutral-500 font-mono tracking-wide flex flex-wrap items-center gap-x-2">
                     <span>{chapter.event.location}</span>
-                    <span aria-hidden="true" className="mx-2 text-neutral-400">
+                    <span aria-hidden="true" className="text-neutral-400">
                       ·
                     </span>
                     <span>
                       {chapter.event.guestCount.toLocaleString()} Guests
                     </span>
-                    <span aria-hidden="true" className="mx-2 text-neutral-400">
+                    <span aria-hidden="true" className="text-neutral-400">
                       ·
                     </span>
                     <span>{chapter.event.year}</span>
@@ -179,7 +192,7 @@ const StickyCategoryScroll = () => {
                   <div className="pt-4">
                     <Link
                       href={`/portfolio/${chapter.event.id}`}
-                      className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-neutral-950 hover:text-[#997312] transition-colors group cursor-pointer"
+                      className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-neutral-950 hover:text-[#997312] transition-colors focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-[#997312] rounded-sm"
                     >
                       <span>Explore Case Study</span>
                       <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
