@@ -121,13 +121,13 @@ export const supplementaryItems = [
     verified: true,
   },
   {
-    id: "aura-1",
+    id: "ode-1",
     quote:
       "Customer feedback has been electric. The kinetic motion elevates what would otherwise be another boring B2B portal.",
     author: "Lars Lindqvist",
     role: "Product Lead",
     avatar: "https://picsum.photos/seed/larsavatar/100/100",
-    company: "Aura Studio",
+    company: "Ode Studio",
     category: "Project management",
     rating: 5,
     verified: true,
